@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>taegyeong</title>
+  
+  <!-- Font Awesome 아이콘 라이브러리 CDN -->
+  <link 
+    rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
+  />
+  <link rel="stylesheet" href="./src/style.css" />
+</head>
+<body>
+  <!-- 테마 토글 버튼 (우측 상단 고정) -->
+  <!-- <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Theme">
+    <i id="sun-icon" class="fa-solid fa-sun theme-icon"></i>
+    <i id="moon-icon" class="fa-solid fa-moon theme-icon hidden"></i>
+  </button> -->
+  <!-- 다크/라이트 모드 전환 토글 버튼 (우측 상단 고정) -->
+  <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Theme">
+    <!-- 라이트 모드로 변경 -->
+    <svg id="sun-icon" class="theme-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line>
+      <line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line>
+      <line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </svg>
+    <!-- 다크 모드로 변경-->
+    <svg id="moon-icon" class="theme-icon hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+    </svg>
+  </button>
+
+  <div class="container">
+    <!-- Header / Intro Section -->
+    <header id="intro-header" class="header">
+      <h1 class="title">Hello, World! I'm Taegyeong Kim</h1>
+      <p class="subtitle">student of computer science & engineering</p>
+
+      <!-- 컨텍 -->
+      <div class="header-contacts">
+        <a href="mailto:danielkim5216@syusw.ac.kr" class="contact-item">
+          <i class="fa-regular fa-envelope"></i>
+          <span>danielkim5216@syusw.ac.kr</span>
+        </a>
+        <a href="https://github.com/Danielkim5216" target="_blank" rel="noreferrer" class="contact-item">
+          <i class="fa-brands fa-github"></i>
+          <span>Danielkim5216</span>
+        </a>
+        <a href="https://www.linkedin.com/in/taegyeong-kim-082b35319/" target="_blank" rel="noreferrer" class="contact-item">
+          <i class="fa-brands fa-linkedin"></i>
+          <span>Taegyeong Kim</span>
+        </a>
+        <a href="https://logistic216.tistory.com/" target="_blank" rel="noreferrer" class="contact-item">
+          <i class="fa-brands fa-wordpress"></i>
+          <span>Logistic</span>
+        </a>
+        <a href="https://danielkim5216.tistory.com/" target="_blank" rel="noreferrer" class="contact-item">
+          <i class="fa-brands fa-wordpress"></i>
+          <span>HardWare Blog</span>
+        </a>
+      </div>
+    </header>
+
+    <!-- 스크롤 페이드인 대상 섹션들 -->
+    <section class="section fade-in-section">
+      <h2 class="section-title">ABOUT ME</h2>
+      <p class="description">
+        안녕하세요! 대한민국에서 컴퓨터공학을 전공하고 있는 학생 김태경입니다.
+        현재 대한민국 공군에서 기반통신체계병(전산장비 및 인프라 관리)으로 복무 중이며 서버, 하드웨어 유지보수 & OS 관리, 네트워크 인프라 구축 및 유지보수 등의 업무를 수행하고 있습니다. 
+      </p>
+    </section>
+
+    <section class="section fade-in-section">
+      <h2 class="section-title">SKILLS</h2>
+      <ul class="skills-list">
+        <li>C / C++</li>
+        <li>Python</li>
+        <li>TypeScript</li>
+        <li>React / Next.js</li>
+        <li>Node.js</li>
+        <li>Pytorch</li>
+        <li>Numpy</li>
+        <li>Pandas</li>
+        <li>Matplotlib</li>
+        <li>linux</li>
+        <li>Git / GitHub</li>
+      </ul>
+    </section>
+
+    <!--경력-->
+    <section class="section fade-in-section">
+      <h2 class="section-title">EXPERIENCE</h2>
+      <div class="experience-list">
+        <div class="experience-item">
+          <div class="experience-header">
+            <h3 class="company-name">Republic of Korea Air Force / 3rd AMDB</h3>
+            <span class="experience-period">2025.06 ~ 복무 중 (2027.03 전역)</span>
+          </div>
+          <p class="experience-role">기반통신체계운용병(네트워크관리)</p>
+        </div>
+
+        <div class="experience-list">
+        <div class="experience-item">
+          <div class="experience-header">
+            <h3 class="company-name">GDG On Campus - Sahmyook University</h3>
+            <span class="experience-period">2024.03 ~ 현재</span>
+          </div>
+          <p class="experience-role">Core Member</p>
+        </div>
+      </div>
+    </section>
+
+    <!--학교-->
+    <section class="section fade-in-section">
+      <h2 class="section-title">EDUCATION</h2>
+      <div class="experience-list">
+        <div class="experience-item">
+          <div class="experience-header">
+            <h3 class="company-name">Sahmyook University</h3>
+            <span class="experience-period">학사, 2025.3 ~ 군휴학중</span>
+          </div>
+          <p class="experience-role">Department of Computer Science and Engineering</p>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Certifications Section -->
+    <section class="section fade-in-section">
+      <h2 class="section-title">CERTIFICATIONS</h2>
+      <div class="certifications-list">
+        <div class="cert-item">
+          <div class="cert-header">
+            <h3 class="cert-name">정보처리기능사 (Craftsman Information Processing)</h3>
+            <span class="cert-date">2024.09</span>
+          </div>
+          <p class="cert-issuer">한국산업인력공단(HRD Korea)</p>
+        </div>
+
+        <div class="cert-item">
+          <div class="cert-header">
+            <h3 class="cert-name">네트워크 관리사 2급 (Network Administrator 2nd Grade)</h3>
+            <span class="cert-date">2022.12</span>
+          </div>
+          <p class="cert-issuer">한국정보통신자격협회</p>
+        </div>
+
+        <div class="cert-item">
+          <div class="cert-header">
+            <h3 class="cert-name">리눅스 마스터 2급(Linux Master 2nd Grade)</h3>
+            <span class="cert-date">2025.01</span>
+          </div>
+          <p class="cert-issuer">KAIT 한국정보통신진흥협회(Korea Association for AI & ICT Promotion)</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section fade-in-section">
+      <h2 class="section-title">PROJECTS</h2>
+      <div class="projects-grid">
+
+          <a href="https://github.com/goodchive" target="_blank" rel="noreferrer" class="project-card">
+          <div class="project-header">
+            <h3 class="project-title">GoodChive</h3>
+            <div class="project-icons">
+              <i class="fa-brands fa-github"></i>
+              <i class="fa-solid fa-arrow-up-right-from-square external-icon"></i>
+            </div>
+          </div>
+          <p class="project-desc">메모장으로 굿즈관리하기 귀찮아서 만든 웹앱, GoodChive</p>
+          <span class="project-tech">TypeScript • Next.js • Nest.js • mariadb</span>
+        </a>
+
+        <a href="https://github.com/Danielkim5216/herta-bot" target="_blank" rel="noreferrer" class="project-card">
+          <div class="project-header">
+            <h3 class="project-title">붕괴:스타레일 정보 검색 디스코드 봇. HERTA-bot</h3>
+            <div class="project-icons">
+              <i class="fa-brands fa-github"></i>
+              <i class="fa-solid fa-arrow-up-right-from-square external-icon"></i>
+            </div>
+          </div>
+          <p class="project-desc">herta-bot is discord bot that search user information or character information etc.. of honkai star rail</p>
+          <span class="project-tech">TypeScript • discord.js • StarRail.js • mariadb</span>
+        </a>
+
+        <a href="https://github.com/danielkim5216/airtimer-ts" target="_blank" rel="noreferrer" class="project-card">
+          <div class="project-header">
+            <h3 class="project-title">공군시계, Airtimer</h3>
+            <div class="project-icons">
+              <i class="fa-brands fa-github"></i>
+              <i class="fa-solid fa-arrow-up-right-from-square external-icon"></i>
+            </div>
+          </div>
+          <p class="project-desc">공군 기수별 복무 현황, 계급 진급 정보, 디데이, 24시간제 국방시계를 확인할 수 있는 사이트입니다.</p>
+          <span class="project-tech">TypeScript • HTML5&CSS3 • Vite 8 • GitHub Actions</span>
+        </a>
+
+        <a href="https://github.com/Danielkim5216/cuda-cudnn-version-checker" target="_blank" rel="noreferrer" class="project-card">
+          <div class="project-header">
+            <h3 class="project-title">[WIP] Nvidia GPU cuda&cudnn version checker</h3>
+            <div class="project-icons">
+              <i class="fa-brands fa-github"></i>
+              <i class="fa-solid fa-arrow-up-right-from-square external-icon"></i>
+            </div>
+          </div>
+          <p class="project-desc">Nvidia GPU의 CUDA 및 cuDNN 버전을 확인하는 도구입니다. (리포지토리 비공개)</p>
+          <span class="project-tech">Python • Nvidia CUDA • Nvidia cuDNN</span>
+        </a>
+
+        <a href="https://danielkim5216.tistory.com/37" target="_blank" rel="noreferrer" class="project-card">
+          <div class="project-header">
+            <h3 class="project-title">자작 NAS 구축</h3>
+            <div class="project-icons">
+              <i class="fa-brands fa-wordpress"></i>
+              <i class="fa-solid fa-arrow-up-right-from-square external-icon"></i>
+            </div>
+          </div>
+          <p class="project-desc">mshell로 XPEnology부트로더 빌드 후 DSM 7.2 설치. docker로 codeserver , moonlight-web , minecraft server 등 서비스 운영. 하드웨어 사양 : G5400 / 8GB / N2 NAS / ST45SF / WD RED 4TB</p>
+          <span class="project-tech">Linux • Network • Shell</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- HARDWARE & GEAR SECTION -->
+    <section class="section fade-in-section">
+      <h2 class="section-title">Hardware & Gear</h2>
+
+      <div class="hardware-grid">
+        <div class="hardware-card">
+          <h3 class="hardware-category">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"/><rect x="2" y="14" width="20" height="8" rx="2" ry="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>
+            System Specs
+          </h3>
+          <ul class="hardware-list">
+            <li><span class="gear-label">CPU</span> <span class="gear-value">Intel® Core™ i5-12600K</span></li>
+            <li><span class="gear-label">M/B</span> <span class="gear-value">ASUS TUF Gaming Z690-PLUS D4</span></li>
+            <li><span class="gear-label">GPU</span> <span class="gear-value">NVIDIA GeForce TITAN Xp 12GB</span></li>
+            <li><span class="gear-label">RAM</span> <span class="gear-value">G.SKILL DDR4-3200 CL14 TRIDENT Z 32GB (OC CL18 3800)</span></li>
+            <li><span class="gear-label">Storage</span> <span class="gear-value">Samsung SSD 970 EVO Plus 500GB / WD_BLACK SN850X 1TB / TOSHIBA MQ04ABF100 1TB</span></li>
+            <li><span class="gear-label">PSU</span> <span class="gear-value">Seasonic A12 STANDARD 230V EU SSR-700RA LLC</span></li>
+            <li><span class="gear-label">CPU/SYS FAN</span> <span class="gear-value">3RSYS CSI 240 / ARCTIC P12 PST</span></li>
+            <li><span class="gear-label">OS</span> <span class="gear-value">Windows 11 Pro</span></li>
+          </ul>
+        </div>
+
+        <div class="hardware-card">
+          <h3 class="hardware-category">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="12" x2="2" y2="12"/><path d="M5.45 5.11 2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"/><line x1="6" y1="16" x2="6.01" y2="16"/><line x1="10" y1="16" x2="10.01" y2="16"/></svg>
+            Server Specs
+          </h3>
+          <ul class="hardware-list">
+            <li><span class="gear-label">CPU</span> <span class="gear-value">Intel® Pentium™ Gold G5400</span></li>
+            <li><span class="gear-label">M/B</span> <span class="gear-value">GIGABYTE H310N</span></li>
+            <li><span class="gear-label">RAM</span> <span class="gear-value">SAMSUNG DDR4 16GB 2666</span></li>
+            <li><span class="gear-label">PSU</span> <span class="gear-value">SilverStone Strider ST45SF</span></li>
+            <li><span class="gear-label">CASE</span> <span class="gear-value">JONSBO N2 NAS</span></li>
+            <li><span class="gear-label">Storage</span> <span class="gear-value">WD RED PLUS WD40EFPX 4TB</span></li>
+            <li><span class="gear-label">OS</span> <span class="gear-value">Synology DSM 7.2.2</span></li>
+          </ul>
+        </div>
+        
+        <div class="hardware-card">
+          <h3 class="hardware-category">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"/></svg>
+            Personal Electronics
+          </h3>
+          <ul class="hardware-list">
+            <li><span class="gear-label">Phone</span> <span class="gear-value">Samsung Galaxy S25 Ultra 512GB</span></li>
+            <li><span class="gear-label">Earbuds</span> <span class="gear-value">Apple AirPods Pro Gen 2</span></li>
+            <li><span class="gear-label">Tablet</span> <span class="gear-value">Apple iPad Air M2 128GB</span></li>
+            <li><span class="gear-label">Laptop</span> <span class="gear-value">Apple MacBook Pro M3 14" 512GB</span></li>
+            <li><span class="gear-label">PowerBank</span> <span class="gear-value">Anker 533 Power Bank</span></li>
+          </ul>
+        </div>
+
+        <div class="hardware-card">
+          <h3 class="hardware-category">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M6 8h.01M10 8h.01M14 8h.01M18 8h.01M6 12h.01M10 12h.01M14 12h.01M18 12h.01M8 16h8"/></svg>
+            Peripherals
+          </h3>
+          <ul class="hardware-list">
+            <li><span class="gear-label">Monitor</span> <span class="gear-value">DELL Alienware AW2720HF</span></li>
+            <li><span class="gear-label">Keyboard</span> <span class="gear-value">Everglide AE64Pro Full Custom</span></li>
+            <li><span class="gear-label">Mouse</span> <span class="gear-value">VXE R1 PRO MAX</span></li>
+            <li><span class="gear-label">Audio</span> <span class="gear-value">7Hz Zero 2 / SteelSeries ARCTIS NOVA 7 WIRELESS</span></li>
+            <li><span class="gear-label">MIC</span> <span class="gear-value">FIFINE Technology K688</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 여담 -->
+    <section class="section fade-in-section">
+      <h2 class="section-title">Trivia</h2>
+      <p class="description">
+        Q. 이 포트폴리오는 어디에서 돌아가고 있는건가요?
+      </p>
+      <p class="description">
+        A. Microsoft Azure의 가상머신인 Standard B2ats v2위에서 돌아가고 있습니다 :) 
+      </p>
+    </section>
+
+    <footer class="section fade-in-section footer">
+      <p class="copyright">&copy; 2026 Taegyeong Kim. All rights reserved.</p>
+    </footer>
+  </div>
+
+  <script type="module" src="./src/main.ts"></script>
+
+  <!-- 민주 sqld 합격 축하 팝업 -->
+  <div id="congrats-modal" class="modal-overlay hidden">
+    <div class="modal-content">
+      <div class="modal-title">문정고의 자랑 구민주 SQLD 합격</div>
+      <div class="modal-img-container">
+        <img id="modal-img-1" class="modal-img" alt="축하 이미지 1" />
+        <img id="modal-img-2" class="modal-img" alt="축하 이미지 2" />
+      </div>    
+      <h2 class="modal-title">동국대 대표 천재 개발자 구민주님께서 SQLD를 박살내고 오셨습니다. 긴장해라 네카라쿠배</h2>
+      <p class="modal-desc"><br /></p>
+
+      <a 
+        href="https://github.com/kookoo999-ctrl" 
+        target="_blank" 
+        rel="noopener noreferrer" 
+        class="modal-github-btn"
+      >
+        <svg class="github-icon" viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+          <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+        </svg>
+        천재 개발자 구민주님의 GitHub 방문하기
+      </a>
+
+      <button id="close-modal-btn" class="modal-close-btn">고맙다 (닫기)</button>
+    </div>
+  </div>
+</body>
+</html>
